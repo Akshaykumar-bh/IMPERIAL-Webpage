@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial</title>
+    <link rel="icon" href="data:image/jpeg;base64,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">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Banner starts -->
+<div class="banner">
+    <div class="banner-content">
+<h1 class="heading-1">Imperial</h1>
+<h1 class="heading-2">WELCOME TO IMPERIAL STUDIOS</h1>
+<P>We create working mobile apps</P>
+<div class="banner-btns">
+    <a href=""class="btn1">GET STARTED</a> 
+    <a href=""class="btn2">OUR SERVICES</a> 
+</div>
+
+</div>
+
+</div>
+    <!-- Banner Ends -->
+
+    <!-- navbar starts -->
+    <nav>
+       <a href="" class="brand-logo">Imperial</a>
+        <ul>
+  <li>
+     <a href="">Home</a>
+    </li>
+<li>
+    <a href="">About</a>
+
+</li>
+<li>
+    <a href="">Services</a>
+</li>
+<li>
+    <a href="">Portfolio</a>
+</li>
+<li>
+    <a href="">Testimonial</a>
+</li>
+<li>
+    <a href="">Team</a>
+</li>
+<li>
+    <a href="">Dropdown</a>
+</li>
+<li>
+    <a href="">Contact</a>
+</li>
+
+        </ul>
+    </nav>
+    <!-- navbar ends -->
+    
+ 
+
+    <!-- About us Starts  -->
+<div class="aboutus">
+<h1 class=" aboutus-h1">ABOUT US</h1> 
+<hr>
+<p class="aboutus-para">
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+    accusantium doloremque laudantium, totam rem aperiam
+</p>
+<div class="aboutus-child">
+<div class="aboutus-image">
+<img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/about-img.jpg" alt="" >
+</div>
+<div class="aboutus-content">
+<h1>We provide great services and ideas</h1>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+     aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate
+</p>
+<br>
+<p>
+    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+     Duis aute irure dolor in reprehenderit in voluptate velit esse 
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+</p> <br>
+<p>
+    Ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+    eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,
+    sunt in culpa qui officia deserunt molli.
+</p>
+
+</div>
+</div>
+</div>
+
+<!-- About us ends -->
+
+
+
+
+<!-- services starts  -->
+
+<div class="services">
+<h1 class="services-h1">OUR SERVICES</h1>
+<hr>
+<p class="services-para">
+    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+</p>
+<div class="services-child">
+   <div class="services-info">
+       <div class="services-icon">
+           <i class="fal fa-briefcase"></i> 
+       </div>
+<div class="services-content">
+    <h1> LOREM IPSUM</h1>
+    <P>Voluptatum deleniti atque corrupti quos dolores et 
+        quas molestias excepturi sint occaecati cupiditate non provident</P>
+
+</div>
+   </div>
+
+   <div class="services-info">
+       <div class="services-icon">
+           <i class="fal fa-clipboard-list-check"></i>
+
+       </div>
+<div class="services-content">
+<h1>DOLOR SITEMA</h1>
+<P>Minim veniam, quis nostrud exercitation ullamco laboris
+     nisi ut aliquipex ea commodo consequat tarad limino ata</P>
+</div>
+
+</div>
+
+<div class="services-info">
+    <div class="services-icon">
+        <i class="fad fa-chart-bar"></i>
+
+    </div>
+    <div class="services-content">
+        <h1>SED UT PERSPICIATIS</h1>
+        <P>Duis aute irure dolor in reprehenderit in voluptate velit esse 
+            cillum dolore eu fugiat nulla pariatur</P>
+
+    </div>
+
+</div>
+
+<div class="services-info">
+    <div class="services-icon">
+        <i class="fal fa-binoculars"></i>
+    </div>
+<div class="services-content">
+    <h1>MAGNI DOLORES</h1>
+    <P>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+         deserunt mollit anim id est laborum</P>
+
+</div>
+</div>
+
+<div class="services-info">
+    <div class="services-icon">
+        <i class="far fa-lightbulb-on"></i>
+    </div>
+    <div class="services-content">
+        <h1>NEMO ENIM</h1>
+        <P>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+             praesentium voluptatum deleniti atque</P>
+    </div>
+
+</div>
+
+<div class="services-info">
+    <div class="services-icon">
+        <i class="fal fa-calendar-week"></i>
+    </div>
+<div class="services-content">
+    <h1>EIUSMOD TEMPOR</h1>
+    <P>Et harum quidem rerum facilis est et expedita distinctio. 
+        Nam libero tempore, cum soluta nobis est eligendi</P>
+      </div>
+               </div>
+                       </div>
+                               </div>
+<!-- services ends -->
+
+
+
+
+<!-- subscribe starts -->
+
+<div class="subscribe">
+
+      <div  class="subscribe-text">
+<h1>Subscribe For Updates</h1>
+<p>Join our 1000+ subscribers and get access to the latest tools, freebies, 
+    product announcements and much more!</p>
+     </div>
+
+
+     <div class="subscribe-btn">
+    <button> SUBSCRIBE NOW</button>
+     </div>
+</div>
+
+
+<!-- subscribe ends  -->
+
+<!-- Portfolio starts  -->
+
+<div class="portfolio">
+   <h1> PORTFOLIO</h1>
+   <hr>
+ <p> Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
+      <div class="portfolio-child">
+         <div class="portfolio-image">
+              <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/portfolio/portfolio-1.jpg" alt="">
+              <div class="img-content">
+                  App 1
+              </div>
+          </div>
+
+
+          <div class="portfolio-image">
+              <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/portfolio/portfolio-2.jpg"  alt="">
+                <div class="img-content">
+                    App 2
+                 </div>
+
+          </div>
+
+          <div class="portfolio-image">
+            <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/portfolio/portfolio-3.jpg"   alt="">
+                  
+                <div class="img-content">
+                    App 3 
+                 </div>
+
+          </div>
+
+
+          <div class="portfolio-image">
+              <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/portfolio/portfolio-4.jpg" alt="">
+                 <div class="img-content">
+                     App 4
+
+                  </div>
+          </div>
+
+          <div class="portfolio-image">
+              <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/portfolio/portfolio-5.jpg" alt="">
+              <div class="img-content">
+                App 5
+
+               </div>
+              
+          </div>
+          <div class="portfolio-image">
+              <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/portfolio/portfolio-6.jpg" alt="">
+               <div class="img-content">
+                  App 6
+
+                </div>
+          </div>
+
+          <div class=" portfolio-image"> 
+              <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/portfolio/portfolio-7.jpg" alt="">
+              <div class="img-content">
+                  App 7
+
+              </div>
+          </div>
+
+
+          <div class="portfolio-image">
+             <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/portfolio/portfolio-8.jpg" alt="">
+              <div class="img-content">
+                  App 8
+
+              </div>
+          </div>
+
+          <div class="portfolio-image">
+              <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/portfolio/portfolio-9.jpg" alt="">
+              <div class="img-content">
+                  App 9
+
+              </div>
+          </div>
+
+        
+
+        </div>
+
+</div>
+
+<!-- Portfolio ends  -->
+
+<!-- Testimonial starts  -->
+<div class="testimonials">
+    
+    <h1>TESTIMONIALS</h1>
+    <hr>
+    <p>Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
+    
+    <div class="testimonial-child">
+        
+    <div class="testimonial-content">
+        <div class="image">
+            <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/client-1.jpg" alt="">
+            <h2>Saul Goodman</h2>
+            <p>Lawless Inc</p>
+       </div>
+            <div class="text">
+                <p><i class="fas fa-quote-left"></i>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, 
+                    aliquam eget nibh et. Maecen aliquam, risus at semper. <i class="fas fa-quote-right"></i></p>
+
+            </div>
+           
+
+           
+
+       </div>
+
+         <div class="testimonial-content">
+             
+             <div class="text">
+                 <p>
+                    <i class="fas fa-quote-left"></i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+                    eaque ipsa quae ab illo inventore veritatis architecto beatae.<i class="fas fa-quote-right"></i></p>
+
+             </div>
+              <div class="image">
+                <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/client-2.jpg" alt="">
+                <h2>Sara Wilsson</h2>
+                <p>Odeo Inc</p>
+
+              </div>
+         </div>
+        
+    </div>
+</div>
+
+ <!-- Testimonial ends  -->
+
+<!-- Our team starts  -->
+
+<div class="ourteam">
+    <h1>OUR TEAM</h1>
+    <hr>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+    <div class="ourteam-child">
+        <div class="ourteam-image">
+            <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/team/team-1.jpg" alt="">
+            <div class="ourteam-content">
+                <h1>Walter White</h1>
+                <p>Chief Executive Officer</p>
+                <div class="logos">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+           
+
+        </div>
+        <div class="ourteam-image">
+            <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/team/team-2.jpg" alt="">
+            <div class="ourteam-content">
+                <h1>Sarah Jhinson</h1>
+                <p>Product Manager</p>
+                <div class="logos">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="ourteam-image">
+            <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/team/team-3.jpg" alt="">
+            <div class="ourteam-content">
+                <h1>William Anderson</h1>
+                <p>CTO</p>
+                <div class="logos">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="ourteam-image">
+            <img src="https://bootstrapmade.com/demo/templates/Imperial/assets/img/team/team-4.jpg" alt="">
+            <div class="ourteam-content">
+                <h1>Amanda Jepson</h1>
+                <p>Accountant</p>
+                <div class="logos">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+        
+
+        </div>
+
+    </div>
+</div>
+
+<!-- our team ends  -->
+
+<!-- contact us starts  -->
+ <div class="contactus">
+     <h1>CONTACT US</h1>
+     <hr>
+     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+     
+     <div class="contactus-child">
+         <div class="contactus-address">
+             <div>
+                <p><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp;&nbsp;&nbsp;A108 Adam Street <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; New York, NY 535022 <br>
+
+                </p>
+                <p><i class="far fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;info@example.com</p>
+                <p><i class="fal fa-mobile"></i>&nbsp;&nbsp;&nbsp;&nbsp;+1 5589 55488 55s
+                </p>
+
+
+             </div>
+            
+         </div>
+         <div class="contactus-form">
+             <div class="contactus-inputs">
+                 <div>
+                     <input type="text" placeholder="Your Name">
+
+                 </div>
+                 <div>
+                     <input type="text" placeholder="Your Email">
+                 </div>
+                 <div>
+                     <input type="text" placeholder="Subject">
+                 </div>
+                 <div>
+                     <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                 </div>
+                 <div>
+                     <button>Send Message</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+ </div>
+
+<!-- contact us ends  -->
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
